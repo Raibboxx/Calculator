@@ -1,24 +1,19 @@
+<!DOCTYPE html>
 <html lang="pt-br"> 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculadora</title>
+    <title>Calculadora</title>
     <style>
         body{ font: normal 17pt Arial; 
             background-color: rgb(138, 137, 137);
-        
-
 
         }
         input {
             font: normal 17pt Arial;
             width: 150px;
         }
-
-
-    
-        
     </style>
 </head>
 <body>
@@ -45,7 +40,12 @@
 <input type="number" name="div2" id="div2">
 <input type="button" value="Dividir" onclick="divisão()">
 <div id="res4"><strong>Resultado da divisão</strong></div> 
-
+<br>
+<br> 
+<input type="number" name=" porc1" id="porc1"> % de 
+<input type="number" name="porc2" id="porc2"> 
+<input type="button" value="Porcentagem" onclick="Porcentagem()">
+<div id="res5"><strong>Resultado da porcentagem</strong></div>
 <style>
     body { font: normal 18pt Arial;
     }
@@ -60,6 +60,9 @@
     }
     div#res4 {
         margin-top: 20px;
+    }
+    div#res5 {
+        margin-top: 20px
     }
 
 </style>
@@ -101,7 +104,16 @@
         var divisão = n7 / n8 
         res4.innerHTML = `A divisão entre ${n7} e ${n8} é igual a <strong>${divisão}</strong>`
      }
-        
+     function Porcentagem() {
+        var tn9 = window.document.getElementById("porc1")
+        var tn10 = window.document.querySelector('input#porc2')
+        var res5 = window.document.getElementById("res5")
+        var n9 = Number(tn9.value)
+        var n10 = Number(tn10.value)
+        var porcentagem = n9*n10/100 
+        res5.innerHTML = `O valor da porcentagem é <strong>${porcentagem}</strong>`
+
+     }
     
 </script>
 </body>
