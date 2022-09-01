@@ -1,12 +1,15 @@
 <style>
         body{ font: normal 17pt Arial; 
             background-color: rgb(138, 137, 137);
+
         }
         input {
             font: normal 17pt Arial;
             width: 150px;
         }
-        body { font: normal 18pt Arial;
+    </style>
+<style>
+    body { font: normal 18pt Arial;
     }
     div#res { 
         margin-top: 20px;
@@ -20,4 +23,8 @@
     div#res4 {
         margin-top: 20px;
     }
-    </style>
+    div#res5 {
+        margin-top: 20px
+    }
+
+</style>
