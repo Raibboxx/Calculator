@@ -35,6 +35,15 @@
         var divisão = n7 / n8 
         res4.innerHTML = `A divisão entre ${n7} e ${n8} é igual a <strong>${divisão}</strong>`
      }
-        
+     function Porcentagem() {
+        var tn9 = window.document.getElementById("porc1")
+        var tn10 = window.document.querySelector('input#porc2')
+        var res5 = window.document.getElementById("res5")
+        var n9 = Number(tn9.value)
+        var n10 = Number(tn10.value)
+        var porcentagem = n9*n10/100 
+        res5.innerHTML = `O valor da porcentagem é <strong>${porcentagem}</strong>`
+
+     }
     
 </script>
