@@ -5,19 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="css/styles.css">
     <style>
         body{ font: normal 17pt Arial; 
-            background-color: rgb(138, 137, 137);
+            background-color: rgb(196, 196, 196);
 
         }
         input {
             font: normal 17pt Arial;
             width: 150px;
+            border-radius: 75px;
+            color: rgb(0, 0, 0);
+            background-color: gray;
+        
         }
+      
     </style>
 </head>
 <body>
     <h1>Somando Valores</h1>
+    <br>
     <input type="number" name ="txtn1" id="txtn1"> +
 <input type="number" name = "txtn2" id = "txtn2">
 <input type="button" value="Somar" onclick ="somar()">
@@ -62,7 +69,8 @@
         margin-top: 20px;
     }
     div#res5 {
-        margin-top: 20px
+        margin-top: 20px;
+
     }
 
 </style>
