@@ -1,12 +1,17 @@
-<style>
+ <style>
         body{ font: normal 17pt Arial; 
-            background-color: rgb(138, 137, 137);
+            background-color: rgb(196, 196, 196);
 
         }
         input {
             font: normal 17pt Arial;
             width: 150px;
+            border-radius: 75px;
+            color: rgb(0, 0, 0);
+            background-color: gray;
+        
         }
+      
     </style>
 <style>
     body { font: normal 18pt Arial;
@@ -24,7 +29,8 @@
         margin-top: 20px;
     }
     div#res5 {
-        margin-top: 20px
+        margin-top: 20px;
+
     }
 
 </style>
