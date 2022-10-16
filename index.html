@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/border.css">
     <style>
         body{ font: normal 17pt Arial; 
-            background-color: rgb(196, 196, 196);
-
+        background-image: linear-gradient(to top, #525050, #1c1b1b);    ;
         }
         input {
             font: normal 17pt Arial;
@@ -19,6 +19,8 @@
             background-color: gray;
         
         }
+    
+    
       
     </style>
 </head>
@@ -29,30 +31,39 @@
 <input type="number" name = "txtn2" id = "txtn2">
 <input type="button" value="Somar" onclick ="somar()">
 <div id="res"><strong>Resultado da soma</strong></div>
-<br>
-<br>
+<br><br>
 <input type="number" name="sub1" id="sub1"> - 
 <input type="number" name=" sub2" id="sub2">
 <input type="button" value="Subtrair" onclick=subtração()> 
 <div id="res3"><strong>Resultado da subtração</strong></div>
-<br>
-<br>
+<br><br>
 <input type="number" name = "txtn3" id= "txtn3">  x 
 <input type="number" name = "txtn4" id = "txtn4">
 <input type="button" value="Multiplicar" onclick="multiplicar()">
 <div id ="res2"><strong>Resultado da multiplicação</strong></div>
-<br>
-<br> 
+<br><br>
 <input type="number" name="div1" id="div1"> ÷
 <input type="number" name="div2" id="div2">
 <input type="button" value="Dividir" onclick="divisão()">
 <div id="res4"><strong>Resultado da divisão</strong></div> 
-<br>
-<br> 
+<br><br> 
 <input type="number" name=" porc1" id="porc1"> % de 
 <input type="number" name="porc2" id="porc2"> 
 <input type="button" value="Porcentagem" onclick="Porcentagem()">
 <div id="res5"><strong>Resultado da porcentagem</strong></div>
+<br><br>
+<input type="number" name="reg1" id="reg1"> <u>está para</u>&emsp;
+<input type="number" name="reg2" id="reg2"> 
+<br><br>
+<input type="number" name="reg3" id="reg3"> <u>está para</u>&emsp;X <br>
+<br>
+<input type="button" value="Resolver" onclick="Resolver()">
+<br>
+<div id="res6"> <strong>Resultado da regra de 3</strong></div>
+<br>
+<br>
+<div id="area">
+</div>
 <style>
     body { font: normal 18pt Arial;
     }
@@ -72,6 +83,11 @@
         margin-top: 20px;
 
     }
+    div#input{
+        margin-top: 100px;
+    }
+   
+    
 
 </style>
 
@@ -120,7 +136,18 @@
         var n10 = Number(tn10.value)
         var porcentagem = n9*n10/100 
         res5.innerHTML = `O valor da porcentagem é <strong>${porcentagem}</strong>`
-
+     }
+     function Resolver(){
+        var tn11 = document.getElementById("reg1")
+        var tn12 =document.getElementById("reg2")
+        var tn13 = document.getElementById("reg3")
+        var res6 = document.getElementById("res6")
+        var n11 = Number(tn11.value)
+        var n12 = Number(tn12.value)
+        var n13 = Number(tn13.value)
+        var regra = n13*n12 / n11 
+        var regra2 = parseFloat(regra.toFixed(2));
+        res6.innerHTML = `O valor de X é` + regra2
      }
     
 </script>
