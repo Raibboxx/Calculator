@@ -1,7 +1,6 @@
- <style>
+<style>
         body{ font: normal 17pt Arial; 
-            background-color: rgb(196, 196, 196);
-
+        background-image: linear-gradient(to top, #525050, #1c1b1b);    ;
         }
         input {
             font: normal 17pt Arial;
@@ -11,6 +10,8 @@
             background-color: gray;
         
         }
+    
+    
       
     </style>
 <style>
@@ -32,5 +33,10 @@
         margin-top: 20px;
 
     }
+    div#input{
+        margin-top: 100px;
+    }
+   
+    
 
 </style>
