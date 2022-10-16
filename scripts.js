@@ -43,7 +43,18 @@
         var n10 = Number(tn10.value)
         var porcentagem = n9*n10/100 
         res5.innerHTML = `O valor da porcentagem é <strong>${porcentagem}</strong>`
-
+     }
+     function Resolver(){
+        var tn11 = document.getElementById("reg1")
+        var tn12 =document.getElementById("reg2")
+        var tn13 = document.getElementById("reg3")
+        var res6 = document.getElementById("res6")
+        var n11 = Number(tn11.value)
+        var n12 = Number(tn12.value)
+        var n13 = Number(tn13.value)
+        var regra = n13*n12 / n11 
+        var regra2 = parseFloat(regra.toFixed(2));
+        res6.innerHTML = `O valor de X é` + regra2
      }
     
 </script>
